@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <div class="container" id="login-container">
+    <h1>🔒 Enter Password</h1>
+    <input type="password" id="password-input" placeholder="Enter password..." />
+    <button onclick="checkPassword()">Access Resources</button>
+    <p id="error-message"></p>
+  </div>
+
   <div class="container">
     <h1>📚 Exam Resources</h1>
 
@@ -52,5 +60,23 @@
       </ul>
     </div>
   </div>
+
+  <script>
+    const correctPassword = "mermaid"; // 👈 Change this to your chosen password
+
+    function checkPassword() {
+      const userInput = document.getElementById("password-input").value;
+      const errorMsg = document.getElementById("error-message");
+
+      if (userInput === correctPassword) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("content-container").style.display = "block";
+      } else {
+        errorMsg.textContent = "Incorrect password. Try again.";
+        errorMsg.style.color = "red";
+      }
+    }
+  </script>
+
 </body>
 </html>
