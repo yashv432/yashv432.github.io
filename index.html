@@ -66,6 +66,18 @@
         <li><a href="https://support.grantadesign.com/resources/grantaedupack/2021r2/learn/topic.htm#t=html%2Fcasestudy_material%2Fcs_m_tableleg.htm" target="_blank">Standard case studies walkthrough (ANSYS)</a></li>
       </ul>
     </div>
+
+    <!-- Hidden Trigger -->
+    <input type="text" id="secret-code" placeholder="Enter secret code..." onkeydown="checkSecret(event)" />
+
+    <!-- Hidden Content -->
+    <div class="hidden-section" id="secret-section">
+      <h2>🕵️ Secret Resources</h2>
+      <ul>
+        <li><a href="pdfs/bonus-cheatsheet.pdf" target="_blank">Bonus Cheatsheet</a></li>
+        <li><a href="pdfs/secret-practice.pdf" target="_blank">Secret Practice Set</a></li>
+      </ul>
+    </div>
   </div>
 
   <script>
@@ -81,6 +93,18 @@
       } else {
         errorMsg.textContent = "Incorrect password. Try again.";
         errorMsg.style.color = "red";
+      }
+    }
+
+    function checkSecret(event) {
+      if (event.key === "Enter") {
+        const input = event.target.value.trim();
+        if (input.toLowerCase() === "unlock42") {
+          document.getElementById("secret-section").style.display = "block";
+          event.target.style.display = "none"; // Optional: hide input after success
+        } else {
+          alert("Incorrect secret code.");
+        }
       }
     }
   </script>
