@@ -67,8 +67,8 @@
       </ul>
     </div>
 
-    <!-- Hidden Trigger -->
-    <input type="text" id="secret-code" placeholder="Enter secret code..." onkeydown="checkSecret(event)" />
+    <!-- Hidden Code Input (initially hidden) -->
+    <input type="text" id="secret-code" placeholder="Enter secret code..." onkeydown="checkSecret(event)" style="display: none;" />
 
     <!-- Hidden Content -->
     <div class="hidden-section" id="secret-section">
@@ -107,6 +107,15 @@
         }
       }
     }
+
+    // Detect Shift + S to show secret code input
+    document.addEventListener("keydown", function(event) {
+      if (event.shiftKey && event.key.toLowerCase() === "s") {
+        const input = document.getElementById("secret-code");
+        input.style.display = "block";
+        input.focus();
+      }
+    });
   </script>
 
 </body>
