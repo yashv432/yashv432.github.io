@@ -32,9 +32,9 @@
       <ul>
         <!-- <li><a href="docs/" target="_blank">Case study 1 notes</a></li> -->
         <!-- <li><a href="docs/" target="_blank">Case study 2 notes</a></li> -->
-        <li><a href="docs/CS3-spine.pdf" target="_blank">Case study 3 notes</a></li>
+        <li><a href="docs/case_studies/CS3-spine.pdf" target="_blank">Case study 3 notes</a></li>
         <!-- <li><a href="docs/" target="_blank">Case study 4 notes</a></li> -->
-        <!-- <li><a href="docs/" target="_blank">Case study 5 notes</a></li> -->
+        <li><a href="docs/case_studies/CS5-KOA.pdf" target="_blank">Case study 5 notes</a></li>
         <!-- <li><a href="docs/" target="_blank">Case study 6 notes</a></li> -->
       </ul>
     </div>
@@ -42,8 +42,8 @@
     <div class="topic">
       <h2>📗 Online resources</h2>
       <ul>
-        <li><a href="docs/Manufacturing Engineering and Technology by Serope Kalpakjian, Steven R. Schmid .pdf" target="_blank">Material processing techniques textbook</a></li>
-        <li><a href="docs/Materials selection textbook.pdf" target="_blank">Material selection textbook</a></li>
+        <li><a href="docs/textbooks/Manufacturing Engineering and Technology by Serope Kalpakjian, Steven R. Schmid .pdf" target="_blank">Material processing techniques textbook</a></li>
+        <li><a href="docs/textbooks/Materials selection textbook.pdf" target="_blank">Material selection textbook</a></li>
         <li><a href="docs/Standard Material Indices.pdf" target="_blank">Standard material indices</a></li>
         <li><a href="docs/Standard Material Properties.pdf" target="_blank">Standard material properties</a></li>
         <li><a href="docs/Material Processes.pdf" target="_blank">Standard material processing methods</a></li>
@@ -55,6 +55,19 @@
       <ul>
         <li><a href="docs/Cost analysis question guide.pdf" target="_blank">Cost Calculation Steps</a></li>
         <li><a href="docs/Cost per unit calculation.xlsx" target="_blank">Cost calculation excel</a></li>
+      </ul>
+    </div>
+
+    <div class="topic">
+      <h2>📙 Quizzes</h2>
+      <ul>
+        <li><a href="docs/Quizzes/Week 2 - Quiz.pdf" target="_blank">Quiz 2</a></li>
+        <li><a href="docs/Quizzes/Week 3a - Quiz.pdf" target="_blank">Quiz 3a</a></li>
+        <li><a href="docs/Quizzes/Week 3b - Quiz.pdf" target="_blank">Quiz 3b</a></li>
+        <li><a href="docs/Quizzes/Week 4 - Quiz.pdf" target="_blank">Quiz 4</a></li>
+        <li><a href="docs/Quizzes/Week 5 - Quiz.pdf" target="_blank">Quiz 5</a></li>
+        <li><a href="docs/Quizzes/Week 6 - Quiz.pdf" target="_blank">Quiz 6</a></li>
+        <li><a href="docs/Quizzes/Week 7 - Quiz.pdf" target="_blank">Quiz 7</a></li>
       </ul>
     </div>
 
@@ -80,43 +93,7 @@
     </div>
   </div>
 
-  <script>
-    const correctPassword = "mermaid"; // 👈 Change this to your chosen password
-
-    function checkPassword() {
-      const userInput = document.getElementById("password-input").value;
-      const errorMsg = document.getElementById("error-message");
-
-      if (userInput === correctPassword) {
-        document.getElementById("login-container").style.display = "none";
-        document.getElementById("content-container").style.display = "block";
-      } else {
-        errorMsg.textContent = "Incorrect password. Try again.";
-        errorMsg.style.color = "red";
-      }
-    }
-
-    function checkSecret(event) {
-      if (event.key === "Enter") {
-        const input = event.target.value.trim();
-        if (input.toLowerCase() === "unlock42") {
-          document.getElementById("secret-section").style.display = "block";
-          event.target.style.display = "none"; // Optional: hide input after success
-        } else {
-          alert("Incorrect secret code.");
-        }
-      }
-    }
-
-    // Detect Shift + S to show secret code input
-    document.addEventListener("keydown", function(event) {
-      if (event.shiftKey && event.key.toLowerCase() === "s") {
-        const input = document.getElementById("secret-code");
-        input.style.display = "block";
-        input.focus();
-      }
-    });
-  </script>
+  <script src="./script.js"></script>
 
 </body>
 </html>
