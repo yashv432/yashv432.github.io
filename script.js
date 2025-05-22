@@ -14,7 +14,7 @@ function checkPassword() {
 function checkSecret(event) {
   if (event.key === "Enter") {
     const input = event.target.value.trim();
-    if (input.toLowerCase() === "unlock42") {
+    if (input.toLowerCase() === "labubu") {
       document.getElementById("secret-section").style.display = "block";
       event.target.style.display = "none"; // Optional: hide input after success
     } else {
@@ -24,7 +24,7 @@ function checkSecret(event) {
 }
 // Detect Shift + S to show secret code input
 document.addEventListener("keydown", function(event) {
-  if (event.shiftKey && event.key.toLowerCase() === "s") {
+  if (event.shiftKey && event.key.toLowerCase() === "m") {
     const input = document.getElementById("secret-code");
     input.style.display = "block";
     input.focus();
