@@ -14,7 +14,7 @@ function checkPassword() {
 function checkSecret(event) {
   if (event.key === "Enter") {
     const input = event.target.value.trim();
-    if (input.toLowerCase() === "labubu") {
+    if (input.toLowerCase() === "meherun") {
       document.getElementById("secret-section").style.display = "block";
       event.target.style.display = "none"; // Optional: hide input after success
     } else {
