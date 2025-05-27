@@ -3,155 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exam Resources</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Yash Vaghela | Personal Portfolio</title>
 </head>
 <body>
 
-  <div class="container" id="login-container">
-    <h1>🔒 Enter Password</h1>
-    <input type="password" id="password-input" placeholder="Enter password..." />
-    <button onclick="checkPassword()">Access Resources</button>
-    <p id="error-message"></p>
-  </div>
+  <header>
+    <h1>Yash Vaghela</h1>
+    <p>Mechanical Engineering • Queen Mary University of London</p>
+  </header>
 
-  <div class="container" id="content-container" style="display: none;">
-    <h1>📚 Exam Resources</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="Yash_CV-1.pdf" target="_blank">CV</a>
+  </nav>
 
-    <div class="topic">
-      <h2>📘 Lecture Slides</h2>
-      <ul>
-        <li><a href="docs/Combined_All_Modules (1).pdf" target="_blank">All slides</a></li>
-        <li><a href="docs/lecture_notes/material properties.pdf" target="_blank">Material properties</a></li>
-        <li><a href="docs/lecture_notes/material classes.pdf" target="_blank">Material classes</a></li>
-        <li><a href="docs/lecture_notes/material selection process.pdf" target="_blank">Material selection process</a></li>
-        <li><a href="docs/lecture_notes/polymers.pdf" target="_blank">Polymers</a></li>
-        <li><a href="docs/lecture_notes/polymer composites.pdf" target="_blank">Polymer Composites</a></li>
-        <li><a href="docs/lecture_notes/manufacturing processes.pdf" target="_blank">Manufacturing processes</a></li>
-        <li><a href="docs/lecture_notes/material and element characteristics.pdf" target="_blank">Material and element characteristics</a></li>
-        <li><a href="docs/lecture_notes/metal alloys.pdf" target="_blank">Metal alloys</a></li>
-        <li><a href="docs/lecture_notes/Ceramics.pdf" target="_blank">Ceramics</a></li>
-        <li><a href="docs/lecture_notes/9-Eco Design.pdf" target="_blank">Eco design</a></li>
-        <li><a href="docs/lecture_notes/11-Adhesive Bonding.pdf" target="_blank">Adhesives</a></li>
-        <li><a href="docs/lecture_notes/12-Additive Manufacturing.pdf" target="_blank">Additive manufacturing</a></li>
-        <li><a href="docs/lecture_notes/13-Cost Calculations.pdf" target="_blank">Cost calculations</a></li>
-        <li><a href="docs/lecture_notes/14-Resolving Conflicts in Design.pdf" target="_blank">Design conflicts</a></li>
-        <li><a href="docs/lecture_notes/15-Design Tools.pdf" target="_blank">Modern design tools</a></li>
-      </ul>
-    </div>
-    
-    <div class="topic">
-      <h2>📘 Case studies</h2>
-      <ul>
-        <!-- <li><a href="docs/" target="_blank">All case studies</a></li> -->
-        <!-- <li><a href="docs/" target="_blank">Case study 1 notes</a></li> -->
-        <!-- <li><a href="docs/" target="_blank">Case study 2 notes</a></li> -->
-        <li><a href="docs/case_studies/CS3-spine.pdf" target="_blank">Case study 3 notes</a></li>
-        <!-- <li><a href="docs/" target="_blank">Case study 4 notes</a></li> -->
-        <li><a href="docs/case_studies/CS5-KOA.pdf" target="_blank">Case study 5 notes</a></li>
-        <!-- <li><a href="docs/" target="_blank">Case study 6 notes</a></li> -->
-      </ul>
-    </div>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm an engineer passionate about fluid dynamics, thermodynamics, electronics and mechatronics. I enjoy solving problems and continuously learning new skills.</p>
+    </section>
 
-    <div class="topic">
-      <h2>📘 MCQs</h2>
-      <ul>
-        <li><a href="docs/mcqs/Materials_Properties_MCQs.pdf" target="_blank">Material properties</a></li>
-        <li><a href="docs/mcqs/SPL3_Polymer_Processing_MCQs.pdf" target="_blank">Polymer processing</a></li>
-        <li><a href="docs/mcqs/Lecture8_All_MCQs.pdf" target="_blank">Material and element characteristics</a></li>
-        <li><a href="docs/mcqs/Ceramics_MCQs.docx" target="_blank">Ceramics</a></li>
-        <li><a href="docs/mcqs/Eco_Design_MCQ_Exam.pdf" target="_blank">Eco design</a></li>
-        <!-- <li><a href="docs/case_studies/CS5-KOA.pdf" target="_blank">Case study 5 notes</a></li> -->
-        <!-- <li><a href="docs/" target="_blank">Case study 6 notes</a></li> -->
-      </ul>
-    </div>
-    
-    <div class="topic">
-      <h2>📗 Online resources</h2>
-      <ul>
-        <li><a href="docs/textbooks/Manufacturing Engineering and Technology by Serope Kalpakjian, Steven R. Schmid .pdf" target="_blank">Material processing techniques textbook</a></li>
-        <li><a href="docs/textbooks/Materials selection textbook.pdf" target="_blank">Material selection textbook</a></li>
-        <li><a href="docs/textbooks/performance-indices-booklet-bokpeien22.pdf" target="_blank">Standard geometry performance indicies</a></li>
-        <li><a href="docs/textbooks/Standard Material Indices.pdf" target="_blank">Standard material indices</a></li>
-        <li><a href="docs/textbooks/Standard Material Properties.pdf" target="_blank">Standard material properties</a></li>
-        <li><a href="docs/textbooks/Materials_EDUPACK_Processing.pdf" target="_blank">EDUPACK processing methods (with images)</a></li>
-        <li><a href="docs/textbooks/Material Processes.pdf" target="_blank">Standard material processing methods details</a></li>
-      </ul>
-    </div>
+    <section id="projects">
+      <h2>Projects (90+ % achieved in all)</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Computational Fluid Dynamics analysis within a 90 degree pipe</h3>
+          <p>An in-depth analysis of fluid flow within a 90 degree pipe bend, with simulations run on meshes of varying complexity, and thorough research conducted to validate findings.</p>
+          <a href="bend-report - Copy (2).pdf" target="_blank" class="button">View Project Preview</a>
+        </div>
+        <div class="project">
+          <h3>Thermodynamic comparison of SRC and ORC within a Geothermal binary power plant</h3>
+          <p>Conducted a thorough literature review, analysing over 40 different sources to claim and justify the effectiveness of an organic rankine cycle for use within geothermal binary power plants over the use of steam rankine cycles.</p>
+          <a href="Geothermal_Binary_power_cycles_Yash_Vaghela.pdf" target="_blank" class="button">View Project Preview</a>
+        </div>
+        <div class="project">
+          <h3>Control Systems - Water level control using PID</h3>
+          <p>Experimentally verifying the accuracy of SIMULINK simulations of water level control, and discussing the limitations observed through detailed analysis of plots produced.</p>
+          <a href="Control_Systems_Report_Yash_Vaghela_preview.pdf" target="_blank" class="button">View Project Preview</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="topic">
-      <h2>📗 Cost Calculation</h2>
-      <ul>
-        <li><a href="docs/Cost analysis question guide.pdf" target="_blank">Cost Calculation Steps</a></li>
-        <li><a href="docs/Cost per unit calculation.xlsx" target="_blank">Cost calculation excel</a></li>
-      </ul>
-    </div>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:y.vaghela@se23.qmul.ac.uk">y.vaghela@se23.qmul.ac.uk</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yash-vaghela-643b25294/" target="_blank">www.linkedin.com/in/yash-vaghela-643b25294/</a></p>
+      <p>GitHub: <a href="https://github.com/yashv432" target="_blank">github.com/yashv432</a></p>
+    </section>
+  </main>
 
-    <div class="topic">
-      <h2>📙 Quizzes</h2>
-      <ul>
-        <li><a href="docs/Quizzes/Week 2 - Quiz.pdf" target="_blank">Quiz 2</a></li>
-        <li><a href="docs/Quizzes/Week 3a - Quiz.pdf" target="_blank">Quiz 3a</a></li>
-        <li><a href="docs/Quizzes/Week 3b - Quiz.pdf" target="_blank">Quiz 3b</a></li>
-        <li><a href="docs/Quizzes/Week 4 - Quiz.pdf" target="_blank">Quiz 4</a></li>
-        <li><a href="docs/Quizzes/Week 5 - Quiz.pdf" target="_blank">Quiz 5</a></li>
-        <li><a href="docs/Quizzes/Week 6 - Quiz.pdf" target="_blank">Quiz 6</a></li>
-        <li><a href="docs/Quizzes/Week 7 - Quiz.pdf" target="_blank">Quiz 7</a></li>
-      </ul>
-    </div>
-
-    <div class="topic">
-      <h2>📙 Extra Resources</h2>
-      <ul>
-        <li><a href="docs/Unit conversions.pdf" target="_blank">Unit conversion document</a></li>
-        <li><a href="docs/Unit_Conversion_Tables.xlsx" target="_blank">Common unit conversion excel</a></li>
-        <li><a href="https://support.grantadesign.com/resources/grantaedupack/2021r2/learn/topic.htm#t=html%2Fcasestudy_material%2Fcs_m_tableleg.htm" target="_blank">Standard case studies walkthrough (ANSYS)</a></li>
-        <li><a href="https://industrialmetalservice.com/metal-university/avoid-long-term-problems-with-our-galvanic-corrosion-chart/" target="_blank">Galvanic corrosion info</a></li>
-      </ul>
-    </div>
-    
-    <div class="topic">
-      <h2>📙 Kahoots</h2>
-      <ul>
-        <li><a href="https://create.kahoot.it/details/20b8eb3f-d3b3-4762-b2ba-0dace277bc9d" target="_blank">Week 3</a></li>
-        <li><a href="https://create.kahoot.it/details/1fbf7571-3b03-4781-95d7-fe67e638d819" target="_blank">Week 4</a></li>
-        <li><a href="https://create.kahoot.it/details/373c1324-6cc9-4682-8b82-eb9d356d4d0b" target="_blank">Week 5</a></li>
-        <li><a href="https://create.kahoot.it/details/df6617cb-54c3-48c5-95a9-39234679731e" target="_blank">Week 6</a></li>
-        <li><a href="https://create.kahoot.it/details/52d4607a-1623-419e-a78b-0fe59b691605" target="_blank">Week 8</a></li>
-        <li><a href="https://create.kahoot.it/details/1d19608d-86d1-4ea3-b70d-4da3190a0025" target="_blank">Week 9</a></li>
-      </ul>
-    </div>
-
-
-    <input type="text" id="secret-code" placeholder="Enter secret code..." onkeydown="checkSecret(event)" style="display: none;" />
-
-    <div class="hidden-section" id="secret-section">
-      <h2>🕵️ Secret Resources</h2>
-      <ul>
-        <li><a href="docs/Meheruns_stuff/MATERIALS NOTES.pdf" target="_blank">Week 2 - Materials</a></li>
-        <li><a href="docs/Meheruns_stuff/MATERIALS - WEEK 4.pdf" target="_blank">Week 4 - Materials</a></li>
-        <li><a href="docs/Meheruns_stuff/Polymer_Shaping_Methods_Adv_Disadv.pdf" target="_blank">Polymer processing adv and disadv</a></li>
-        <li><a href="docs/Meheruns_stuff/MATERIALS - WEEK 5.pdf" target="_blank">Week 5 - Materials</a></li>
-        <li><a href="docs/Meheruns_stuff/WEEK 6.pdf" target="_blank">Week 6 - Materials</a></li>
-        <li><a href="docs/case_studies/Sustainability Case study Notes FINAL.pdf" target="_blank">All Case study notes (S)</a></li>
-        <li><a href="docs/case_studies/EMS501U DESIGN CASE STUDIES.pdf" target="_blank">All Case study notes (N)</a></li>
-        <li><a href="docs/case_studies/Dissimilar Welding CS4.pdf" target="_blank">Case study 1,3,4 notes (S)</a></li>
-        <li><a href="docs/case_studies/Case study 1.pdf" target="_blank">Case study 1 notes</a></li>
-        <li><a href="docs/case_studies/cs1 TYRES.pdf" target="_blank">Case study 1 notes</a></li>
-        <li><a href="docs/case_studies/CASE_STUDY_2_notes_haadiyah.pdf" target="_blank">Case study 2 notes (H)</a></li>
-        <li><a href="docs/case_studies/CS3_Bone_Cage_Summary.pdf" target="_blank">Case study 3 notes</a></li>
-        <li><a href="docs/Meheruns_stuff/MY_CASE_STUDY_UPDATED.pdf" target="_blank">Updated Case study notes (M)</a></li>
-        <li><a href="docs/Meheruns_stuff/MY_CASE_STUDY_3.pdf" target="_blank">Case study 3 notes (M)</a></li>
-        <li><a href="docs/case_studies/Dissimilar Welding CS4 2.pdf" target="_blank">Case study 4 notes (Z)</a></li>
-        <li><a href="docs/case_studies/cs6-damper mass.pdf" target="_blank">Case study 6 notes</a></li>
-        <!-- <li><a href="docs/textbooks/CES_Question_Solutions_2013_2019_8.pdf" target="_blank">2013 questions and solutions</a></li>
-        <li><a href="docs/textbooks/2014_solutions.pdf" target="_blank">2014 questions and solutions</a></li>
-        <li><a href="docs/textbooks/2017_solutions.pdf" target="_blank">2017 questions and solutions</a></li> -->
-      </ul>
-    </div>
-  </div>
-
-  <script src="./script.js"></script>
+  <footer>
+    <p>&copy; 2025 Yash Vaghela. Built with HTML + CSS.</p>
+  </footer>
 
 </body>
 </html>
